@@ -1,7 +1,10 @@
 body {
     display: flex;
     justify-content: center;
-    background-color: rgb(27,27,27);
+    background-image: linear-gradient(to bottom right, black, blue);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
 }
 .container {
     display: flex;
@@ -10,75 +13,18 @@ body {
 }
 
 
-.one {
+.box {
     color: rgb(195,151,79);
     background-color: blue;
     border: 1px solid black;
     text-align: center;
     cursor: pointer;
+    height: 50px;
+    line-height: 50px;
+    
 }
 
-.two {
-    color: rgb(195,151,79);
-    background-color: blue;
-    border: 1px solid black;
-    text-align: center;
-    cursor: pointer;
-}
-
-.three {
-    color: rgb(195,151,79);
-    background-color: blue;
-    border: 1px solid black;
-    text-align: center;
-    cursor: pointer;
-}
-
-.four {
-    color: rgb(195,151,79);
-    background-color: blue;
-    border: 1px solid black;
-    text-align: center;
-    cursor: pointer;
-}
-
-.five {
-    color: rgb(195,151,79);
-    background-color: blue;
-    border: 1px solid black;
-    text-align: center;
-    cursor: pointer;
-}
-
-.six {
-    color: rgb(195,151,79);
-    background-color: blue;
-    border: 1px solid black;
-    text-align: center;
-    cursor: pointer;
-}
-
-.one:hover {
-    background-color: gold;
-}
-
-.two:hover {
-    background-color: gold;
-}
-
-.three:hover {
-    background-color: gold;
-}
-
-.four:hover {
-    background-color: gold;
-}
-
-.five:hover {
-    background-color: gold;
-}
-
-.six:hover {
+.box:hover {
     background-color: gold;
 }
 
