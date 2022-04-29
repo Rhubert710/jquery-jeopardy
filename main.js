@@ -123,10 +123,9 @@ function answerSubmitter() {
         userInput[0].value === questionSetter.answer.toLowerCase() && questionSetter.length !== 0
         ) {
             score += tempHolder;
-            localStorage.setItem('score', Number(score));
-        scoreShower.html('$' + score);
-        questionShower.html(`<h3>CORRECT!</h3>`);
-        questionSetter = [];
+            scoreShower.html('$' + score);
+            questionShower.html(`<h3>CORRECT!</h3>`);
+            questionSetter = [];
     }
     else if(questionSetter.length == 0) {
         questionShower.html(`<h3></h3>`);
@@ -135,6 +134,8 @@ function answerSubmitter() {
     else {
         questionShower.html(`<h3>FALSE</h3>`);
         correctAnswer.html(`<h3>${questionSetter.answer}</h3>`)
+        score -= tempHolder;
+        scoreShower.html('$' + score);
         questionSetter = [];
     }
 }
